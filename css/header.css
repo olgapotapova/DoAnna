@@ -1,0 +1,195 @@
+/*/////////// Language //////////*/
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 18px;
+}
+.menu-left{
+    float: left;
+    padding-left: 25px;
+  }
+  
+  /* Button of dropdown list */
+  .hidden{
+    display: none;
+  }
+  .select {
+    position: relative;
+    width: 100%;
+    min-width: 5ch;
+    max-width: 5ch;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: var(--header-fon);
+  }
+  select:focus + .focus {
+    position: absolute;
+    top: -20px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--header-fon);
+  }
+  select {
+    appearance: none;
+    background-color: var(--header-fon);
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    top: 0;
+    border-radius: 5px;
+  }
+  select:active, select:focus{
+    outline:none;
+    border-left: solid 20px var(--header-fon) !important;
+  
+  }
+  .change-lang:focus, .change-lang:active{
+    top: -65px;
+    left: 5px;
+  }
+  select::-ms-expand {
+    display: none;
+    background-color: var(--header-fon);
+  }
+  .change-lang{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: var(--header-fon);
+    margin-top: -20px;
+  }
+  .change-lang:nth-child(1){
+    position: relative;
+    min-width: 4ch;
+    max-width: 4ch;
+    border: solid 4px var(--header-fon);
+    outline: solid 4px var(--header-fon);
+    text-align: center;
+  }
+  .focus{
+    background-color: var(--header-fon);
+    border: none;
+    display: inline-block;
+    outline: none;
+    color: #ffffff;
+    line-height: 1.5;
+    min-width: 4ch;
+    max-width: 4ch;
+  }
+  
+  /*/////////// Language end //////////*/
+  
+  /*////// Burger /////////*/
+  
+  .menu-right-container{
+      position: relative;
+      float: right;
+      margin-right: 40px;
+      z-index: 1000;
+  }
+  
+  .menu-right{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    max-height: 260px;
+    height: 260px;
+    top: 82px;
+    left: auto;
+    width: 185px;
+    height: 100%;
+    padding: 15px;
+    background: var(--dark);
+    transform: translateX(100%);
+    transition: transform 1.8s;  
+  }
+  .menu-right.active {
+    transform: translateX(0);
+    right: 40px;
+  }
+  .menu-right nav{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .menu-right nav ul{
+    margin: auto;
+    padding: auto;
+    text-align:center;
+    padding-left: 0 !important;
+    margin-top: -10px;
+
+  }
+  .menu-right nav ul li {
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+  }
+  .menu-right nav ul li a{
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    line-height: 2.1;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #000000;
+
+  }
+  .menu-right nav ul li img{
+    max-width: 140px;
+    margin-top: 20px;
+  }
+  .menu-btn {
+      width: 38px;
+      height: 40px;
+      position: relative;
+      z-index:2;
+      overflow: hidden;
+  }
+  .menu-btn span {
+      width: 38px;
+      height: 2.4px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      transition: all 0.5s;
+  }
+  .menu-btn span:nth-of-type(2) {
+      top: calc(50% - 10px);
+  }
+  .menu-btn span:nth-of-type(3) {
+      top: calc(50% + 10px);
+  }
+  /* Change icon of burger, when menu open */
+  .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+  .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);  
+  }
+  .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg); 
+  }
+  
+  /*////// Burger end /////////*/

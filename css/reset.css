@@ -1,0 +1,87 @@
+/*////////////// Reset styles /////////////*/
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Removing padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove marging */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove standart style for all "ul" and "li", if it has class */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that do not have a class are reset to default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Making it easy to work with images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Periodicity in the data flow for element "article" */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Font inheritance for buttons and input forms */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations and transitions if disabled */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*////////////// Reset styles end /////////////*/
+
+/* Main settings for body */
+:root {
+    --dark: #DDDACF;
+    --light: #F1EEE1;
+    --gold: #B7A568;
+    --black-gold: #7D6E3A;
+    --ok: #418A40;
+    --error: #FA0A61;
+    --good: #0A4DFA;
+    --header-fon: #212120;
+    --new-gold: #CDC3A0;
+  }

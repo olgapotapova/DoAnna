@@ -1,0 +1,120 @@
+body {
+  min-height: 100vh;
+  height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/*////////////// Main styles /////////////*/
+
+html, body {
+    height: 100vh;
+    min-height: 100vh;
+    background: url(../images/Anna.png) no-repeat;
+    background-size: cover;
+  }
+
+#app{
+    position: relative;
+}
+
+.content{
+    margin: 0;
+    padding: 0;
+}
+
+/*////////////// End of main styles /////////////*/
+
+/*////////////// Logo styles /////////////*/
+
+.full-logo-container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+}
+
+.full-logo{
+    position: relative;
+    margin-left: 55.5%;
+    margin-right: auto;
+    padding-top: 6.5%;
+}
+
+#logo-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 52px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 3px;
+    line-height: 100%;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.icon{
+  width: 30px;
+  height: auto;
+  margin: 3px;
+}
+
+.icon-telegram{
+  width: 34px;
+  height: auto;
+  margin: 1px -2px 4px 4px;
+}
+
+/*////////////// End of logo styles /////////////*/
+
+
+/*////////////// Adaptive version /////////////*/
+
+@media screen and (max-width: 1000px) {
+  .full-logo-img{
+    max-width: 280px;
+    padding-top: 10%;
+  }
+  #logo-header{
+    font-size: 2em;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .social-media{
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .full-logo{
+    padding-top: 20%;
+}
+  #logo-header{
+    margin-left: 0px;
+  }
+  .full-logo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*////////////// End of Adaptive version /////////////*/
+
+
+
