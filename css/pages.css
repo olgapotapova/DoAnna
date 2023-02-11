@@ -4,6 +4,22 @@
     width: 100%;
 }
 
+.left-logo-img{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.left-logo-href{
+    position: relative;
+    z-index: 2000;
+}
+
+.menu-left{
+    float: left;
+    padding-left: 95px;
+    margin-top: -55px; 
+  }
+
 #site2{
     background-color: var(--light);
 }
@@ -24,9 +40,33 @@
     margin-top: 70px;
 }
 
-.portrait{
+ .pattern-frame{
+    float: left;
+    width: 64%;
+    margin-right: -55%;
+    position: relative;
+    z-index: 1;
+    margin-top: -6.5%;
+} 
+.image-stack{
+    margin-top: 5%;
     margin-left: 12%;
-    margin-top: 1%;
+    max-width: 660px;
+    min-width: 660px;
+    width: 660px;
+}
+.image-stack::after{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.portrait-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .tere{
@@ -36,11 +76,9 @@
     font-size: 14px;
     font-style: italic;
     font-weight: bold;
-    max-width: 30%;
     text-align: left;
-    margin-left: auto;
-    margin-right: 12%;
     margin-top: 13%;
+    margin-left: -9%;
 }
 
 .tere p{
@@ -48,7 +86,7 @@
 }
 
 .tere img{
-    max-width: 25%;
+    max-width: 100px;
     padding-top: 20px;
 }
 
@@ -83,8 +121,8 @@ h3{
 .container-samuti{
     position: relative;
     display: flex;
-    justify-content: row;
-    margin-top: -21%;
+    flex-direction: row;
+    margin-top: -260px;
     min-height: 800px;  
 }  
 
@@ -92,7 +130,9 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5.5%;
+    padding-left: 17%;
+    max-width: 50%;
+    width: 50%;
 }
 
 .samuti p{
@@ -101,35 +141,164 @@ h3{
     font-style: italic;
     font-weight: bold;
     padding-top: 4%;
-    padding-left: 42%;
-    min-width: 160%;
     position: relative;
     z-index: 1;
 }
 
 .musical-pattern{
-    margin-top: 3.5%;
+    position: absolute;
+    max-width: 70%;
+    margin-top: 8vh;
+    margin-left: 33%;
 }
 
 .final-pattern{
     display: flex;
     width: 100%;
-    height: 100px;
-    margin-top: -10%;
+    margin-top: -17.5%;
     background-color: var(--light);
 }
 
 .final-pattern img{
     position: relative;
     z-index: 2;
-    width: 260px;
+    width: 20%;
     height: 300px;
     margin: 0 auto 60px auto;
+    overflow: hidden;
 }
+
+/*////// Pages footer /////////*/
 
 .footer-page{
     background-color: var(--header-fon);
     bottom: 0px !important;
-    min-height: 80px;   
+    min-height: 150px;   
 }
+
+.footer-social-media-pages{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.social-media-footer{
+    display: flex;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 8px;
+}
+
+.icon{
+    width: 36px;
+    height: auto;
+    margin: 4px;
+  }
+  
+  .icon-telegram{
+    width: 38px;
+    height: auto;
+    margin: 1px -2px 4px 4px;
+  }
+
+.footer-page{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    min-width: 100%;
+    bottom: 38px;
+    top:auto;
+    z-index: 1000;
+  }
+  
+    .telephone{
+      width: 100%;
+      min-width: 100%;
+      color: #ffffff;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-weight: normal;
+      font-variant-numeric: oldstyle-nums;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+   
+  /*////// End of pages footer /////////*/
+
+  /*////////////// Adaptive version /////////////*/
+
+  @media screen and (max-width: 1200px) {
+    .tere{
+        max-width: 300px !important;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .container-about{
+        flex-direction: column;
+    }
+    .portrait-img{
+        display: flex;
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 8px;
+    }
+    .portrait-img img{
+        max-width: 260px;
+        min-width: 260px;
+        width: 260px;
+    }
+    .pattern-frame{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        margin-top: -6.5%;
+    } 
+    .image-stack{
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 360px;
+        min-width: 360px;
+        width: 360px;
+    }
+    .image-stack::after{
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+    .tere{
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 17%;
+    }
+    .container-samuti{
+        min-height: 90vh;
+        margin-top: -30vh;
+    }
+  }
+  @media screen and (max-width: 800px){
+    .container-samuti{
+        min-height: 80vh;
+        margin-top: -20vh;
+    }
+    .tere{
+        padding-right: 17%;
+    }
+  }
+
+  @media screen and (max-width: 640px){
+    .container-samuti{
+        min-height: 50vh;
+        margin-top: -15vh;
+    }
+  }
+
+  /*////////////// End of Adaptive version /////////////*/
 

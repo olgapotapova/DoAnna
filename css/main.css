@@ -6,6 +6,15 @@ body {
   line-height: 1.5;
 }
 
+.menu-all{
+  background-color: rgb(17, 17, 15, 0.95);
+  box-shadow: -1px 11px 17px 8px rgba(0,0,0,0.9);
+  -webkit-box-shadow: -1px 11px 17px 8px rgba(0,0,0,0.9);
+  -moz-box-shadow: -1px 11px 17px 8px rgba(0,0,0,0.9);
+  height: 75px;
+  width: 100%;
+}
+
 /*////////////// Main styles /////////////*/
 
 html, body {
@@ -13,7 +22,7 @@ html, body {
     min-height: 100vh;
     background: url(../images/Anna.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -54,10 +63,9 @@ html, body {
     justify-content: center;
     color: #ffffff;
     margin-top: 20px;
-    /* margin-left: 25px; */
     font-family: "Playfair Display", serif;
     font-style: italic;
-    font-weight: 600;
+    font-weight:bold;
     font-size: 48px;
     text-align: center;
     vertical-align: top;
@@ -75,6 +83,17 @@ html, body {
   margin-left: 20px;
 }
 
+.footer-social-media-pages{
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-media-footer{
+  display: none;
+}
+
 .icon{
   width: 30px;
   height: auto;
@@ -88,6 +107,35 @@ html, body {
 }
 
 /*////////////// End of logo styles /////////////*/
+
+/*////// Main page footer /////////*/
+
+.footer-page{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  min-width: 100%;
+  bottom: 38px;
+  top:auto;
+  z-index: 1000;
+}
+
+  .telephone{
+    width: 100%;
+    min-width: 100%;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant-numeric: oldstyle-nums;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    padding-left: 15px;
+  }
+
+  
+/*////// Main page footer end /////////*/
 
 
 /*////////////// Adaptive version /////////////*/
@@ -108,16 +156,54 @@ html, body {
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
+  html, body{
+    height: 100vh;
+    min-height: 100vh;
+    background: url(../images/Anna-mobile.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .full-logo-container{
+    min-width: 100%;
+  }
   .full-logo{
-    padding-top: 20%;
-}
+    padding-top: 5%;
+  }
+  .full-logo-img{
+    max-width: 100%;
+    padding-top: 5%;
+  }
   #logo-header{
     margin-left: 0px;
+    font-size: 48px;
   }
   .full-logo{
     margin-left: auto;
     margin-right: auto;
+  }
+  .social-media{
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .full-logo-img{
+    max-width: 280px;
+    padding-top: 5%;
+  }
+  #logo-header{
+    font-size: 2em;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .social-media{
+    margin-top: 20px;
+    margin-left: 0px;
   }
 }
 
