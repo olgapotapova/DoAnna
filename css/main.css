@@ -11,8 +11,10 @@ body {
 html, body {
     height: 100vh;
     min-height: 100vh;
-    background: url(../images/Anna.png) no-repeat;
+    background: url(../images/Anna.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 35% 75%; */
   }
 
 #app{

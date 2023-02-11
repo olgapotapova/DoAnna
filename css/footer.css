@@ -1,13 +1,13 @@
 /*////// Main page footer /////////*/
 
-.footer-main-page{
+.footer-page{
     position: fixed;
     display: flex;
     width: 100%;
     min-width: 100%;
     bottom: 38px;
     top:auto;
-    background-color: var(--header-fon);
+    z-index: 1000;
   }
   
     .telephone{

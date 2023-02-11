@@ -84,7 +84,6 @@ h3{
     position: relative;
     display: flex;
     justify-content: row;
-    /* margin-top: -18%;  */
     margin-top: -21%;
     min-height: 800px;  
 }  
@@ -102,18 +101,35 @@ h3{
     font-style: italic;
     font-weight: bold;
     padding-top: 4%;
-    padding-left: 48%;
-    min-width: 170%;
+    padding-left: 42%;
+    min-width: 160%;
     position: relative;
     z-index: 1;
 }
 
-.img{
-    margin-top: 3%;
-    margin-left: 3%;
-    width: 100%;
-    background: url(/images/musical-pattern.png) no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 0;
+.musical-pattern{
+    margin-top: 3.5%;
 }
+
+.final-pattern{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: -10%;
+    background-color: var(--light);
+}
+
+.final-pattern img{
+    position: relative;
+    z-index: 2;
+    width: 260px;
+    height: 300px;
+    margin: 0 auto 60px auto;
+}
+
+.footer-page{
+    background-color: var(--header-fon);
+    bottom: 0px !important;
+    min-height: 80px;   
+}
+
