@@ -12,9 +12,13 @@ html, body {
     height: 100vh;
     min-height: 100vh;
     background: url(../images/Anna.png);
-    background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: 35% 75%; */
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 35% 75%;
   }
 
 #app{
@@ -50,15 +54,16 @@ html, body {
     justify-content: center;
     color: #ffffff;
     margin-top: 20px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-weight: 600;
-    font-size: 52px;
+    font-size: 48px;
     text-align: center;
     vertical-align: top;
     letter-spacing: 3px;
     line-height: 100%;
+    white-space: nowrap;
 }
 
 .social-media{

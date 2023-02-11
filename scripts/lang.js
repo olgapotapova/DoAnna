@@ -4,6 +4,11 @@ const langArr = {
         "en": "Singing studio",
         "ee": "Laulustuudio",
     },
+    "singingstudio": {
+        "ru": "Вокальная студия",
+        "en": "Singing studio",
+        "ee": "Laulustuudio",
+    },
     "minust": {
         "ru": "Обо мне",
         "en": "About me",
