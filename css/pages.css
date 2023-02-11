@@ -11,14 +11,14 @@
 
 .left-logo-href{
     position: relative;
-    z-index: 2000;
 }
 
 .menu-left{
     float: left;
     padding-left: 95px;
+    margin-right: -50px;
     margin-top: -55px; 
-  }
+}
 
 #site2{
     background-color: var(--light);
@@ -285,8 +285,8 @@ h3{
   }
   @media screen and (max-width: 800px){
     .container-samuti{
-        min-height: 80vh;
-        margin-top: -20vh;
+        min-height: 68vh;
+        margin-top: -26vh;
     }
     .tere{
         padding-right: 17%;
@@ -295,8 +295,16 @@ h3{
 
   @media screen and (max-width: 640px){
     .container-samuti{
-        min-height: 50vh;
-        margin-top: -15vh;
+        min-height: 20vh;
+        margin-top: 0;
+    }
+    .samuti{
+        padding-right: 17%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .musical-pattern{
+        display: none;
     }
   }
 
