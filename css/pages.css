@@ -9,6 +9,10 @@
     padding-left: 30px;
 }
 
+.left-logo-img:hover{
+    filter: saturate(2);
+}
+
 .left-logo-href{
     position: relative;
 }
