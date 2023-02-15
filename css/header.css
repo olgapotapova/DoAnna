@@ -11,9 +11,6 @@ header {
   }
   
   /* Button of dropdown list */
-  .hidden{
-    display: none;
-  }
   .select {
     position: relative;
     width: 100%;
@@ -46,10 +43,13 @@ header {
     top: 0;
     border-radius: 5px;
   }
-  select:active, select:focus{
+  /* select:active{
     outline:none;
     border-left: solid 20px var(--header-fon) !important;
-  
+  } */
+  select:focus{
+    outline:none;
+    border-left: solid 20px var(--header-fon) !important;
   }
   .change-lang:focus, .change-lang:active{
     top: -65px;

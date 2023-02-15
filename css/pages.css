@@ -20,8 +20,9 @@
     margin-top: -55px; 
 }
 
-#site2{
+.content-pages{
     background-color: var(--light);
+    min-height: 100vh;
 }
 
 .container-about{
@@ -29,7 +30,7 @@
     margin-bottom: 6%;
 }
 
-.lng-about{ 
+.lng-about, .lng-laulustuudio, .lng-kuulmistest, .lng-kontaktid, .lng-räägivad{ 
     color: var(--black-gold);
     font-family: "Playfair Display", serif;
     font-size: 40px;
@@ -168,6 +169,22 @@ h3{
     overflow: hidden;
 }
 
+.final-pattern-2{
+    display: flex;
+    width: 100%;
+    margin-top: 0%;
+    background-color: var(--light);
+}
+
+.final-pattern-2 img{
+    position: relative;
+    z-index: 2;
+    width: 20%;
+    height: 300px;
+    margin: 0 auto 60px auto;
+    overflow: hidden;
+}
+
 /*////// Pages footer /////////*/
 
 .footer-page{
@@ -228,6 +245,82 @@ h3{
     }
    
   /*////// End of pages footer /////////*/
+
+  /*////////////// Singing-studio /////////////*/
+
+  .card-header-1, .card-header-2{
+    position: relative;
+    z-index: 2;
+    margin: 12% auto 2% 16%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  .card-header-2{
+    margin-top: 7.5%;
+    margin-bottom: 4%;
+  }
+
+  .card-background{
+    position: absolute;
+    z-index: 0;
+    min-width: 80%;
+    max-width: 80%;
+    width: 80%;
+    height: auto;
+    margin-left: 9%;
+    margin-top: 65px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+
+  .container-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100%;
+  }
+
+  .container-card{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100%;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    min-width: 24%;
+    padding: 8% 1.6% 5% 1.6%;
+  }
+
+  .card-text{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 12%;
+    margin-left: 16%;
+  }
+   /*////////////// End of singing-studio /////////////*/
 
   /*////////////// Adaptive version /////////////*/
 
