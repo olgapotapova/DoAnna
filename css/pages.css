@@ -173,22 +173,6 @@ h3{
     overflow: hidden;
 }
 
-.final-pattern-2{
-    display: flex;
-    width: 100%;
-    margin-top: 0%;
-    background-color: var(--light);
-}
-
-.final-pattern-2 img{
-    position: relative;
-    z-index: 2;
-    width: 20%;
-    height: 300px;
-    margin: 0 auto 60px auto;
-    overflow: hidden;
-}
-
 /*////// Pages footer /////////*/
 
 .footer-page{
@@ -324,8 +308,131 @@ h3{
     margin-top: 12%;
     margin-left: 16%;
   }
+
+  .final-pattern-studio{
+    display: flex;
+    width: 100%;
+    margin-top: 0%;
+    background-color: var(--light);
+}
+
+.final-pattern-studio img{
+    position: relative;
+    z-index: 2;
+    width: 20%;
+    height: 300px;
+    margin: 0 auto 60px auto;
+    overflow: hidden;
+}
+
    /*////////////// End of singing-studio /////////////*/
 
+   /*////////////// Reviews /////////////*/
+
+   .container-reviews{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 67%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8.5%;
+        background-color: #ffffff;
+        border-radius: 2%;
+        min-height: auto;
+        height: auto;
+   }
+
+   .reviews-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 6.5%;
+        margin-bottom: 5.5%;
+    }
+
+    .reviews-img{
+        border-radius: 6%;
+        height: auto;
+        width: 37%;
+        min-width: 37%;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+
+    .reviews-img-revers{
+        border-radius: 6%;
+        height: auto;
+        width: 37%;
+        min-width: 37%;
+        margin-left: auto;
+        margin-right: 10%;
+    }
+
+    .reviews-text{
+        width: 29%;
+        min-width: 29%;
+        margin-left: auto;
+        margin-right: 10%;
+        margin-top: 4%;
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    
+    .reviews-text-revers{
+        width: 29%;
+        min-width: 29%;
+        margin-left: 10%;
+        margin-right: auto;
+        margin-top: 6%;
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .reviews-text span, .reviews-text-revers span{
+        display: flex;
+        font-weight: bold;
+        align-items: end;
+        justify-content: flex-end;
+        margin-top: 22%;
+    }
+
+    .musical-pattern-reviews{
+        position: absolute;
+        z-index: 0;
+        max-width: 38%;
+        margin-top: -30vh;
+        margin-left: 58%;
+        transform: rotate(15deg);
+    }
+
+    .final-pattern-reviews{
+        display: flex;
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 10%;
+        background-color: var(--light);
+    }
+    
+    .final-pattern-reviews img{
+        position: relative;
+        z-index: 2;
+        width: 22%;
+        min-height: 300px;
+        height: auto;
+        margin: 0 auto 60px auto;
+        overflow: hidden;
+    }
+
+  /*////////////// End of reviews /////////////*/
+   
   /*////////////// Adaptive version /////////////*/
 
   @media screen and (max-width: 1200px) {
