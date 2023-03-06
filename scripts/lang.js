@@ -79,4 +79,69 @@ const langArr = {
         "en": "Call (tel.: +372 55614084) and we'll talk.",
         "ee": "Helistage (tel: +372 55614084) ja me räägime.",
     },
+    "talking": {
+        "ru": "Ученики рассказывают...",
+        "en": "Students are talking...",
+        "ee": "Õpilased räägivad...",
+    },
+    "spiritual": {
+        "ru": "Музыка — самое духовное из искусств. Вы должны находиться на определенном духовном уровне, чтобы преподавать музыку. И у Анны это есть. Вот почему у неё легко учиться. И я не знаю никого другого, с кем было бы так легко.",
+        "en": "Music is the most spiritual of the arts. You have to be on a certain spiritual level to teach music. And Anna is there. That's why it's easy to learn from him. And I don't know anyone else with whom it would be so easy.",
+        "ee": "Muusika on kunstidest kõige vaimsem. Muusika õpetamiseks peate olema teatud vaimsel tasandil. Ja Anna on seal. Seetõttu on temalt lihtne õppida. Ja ma ei tea kedagi, kellega oleks veel nii lihtne.",
+    },
+    "important": {
+        "ru": "Мне важно, чтобы учитель не кричал, не злился, иначе я не захочу учиться. Анна очень добрая. Это важно для меня!",
+        "en": "It is important for me that the teacher does not shout, does not get angry, otherwise I do not want to learn. Anna is very kind. This is important to me!",
+        "ee": "Minu jaoks on oluline, et õpetaja ei karjuks, ei vihastaks, muidu ei taha ma õppida. Anna on väga lahke. See on minu jaoks oluline!",
+    },
+    "relax": {
+        "ru": "Я занимаюсь с Анной совсем недавно, но уже успела научиться расслабиться во время пения. Это то, чего мне не хватало.",
+        "en": "I've been working with Anna recently, but I've already managed to relax while singing. I really needed it.",
+        "ee": "Tegelen hiljuti Anna juures, kuid laulmise ajal on juba õnnestunud lõõgastuda. Mul oli seda väga vaja.",
+    },
+    "katrin": {
+        "ru": "Катрин",
+        "en": "katrin",
+        "ee": "Katrin",
+    },
+    "milana": {
+        "ru": "Милана",
+        "en": "Milana",
+        "ee": "Milana",
+    },
+    "olga": {
+        "ru": "Ольга",
+        "en": "Olga",
+        "ee": "Olga",
+    },
+    "": {
+        "ru": "",
+        "en": "",
+        "ee": "",
+    },
+    "": {
+        "ru": "",
+        "en": "",
+        "ee": "",
+    },
+    "": {
+        "ru": "",
+        "en": "",
+        "ee": "",
+    },
+    "": {
+        "ru": "",
+        "en": "",
+        "ee": "",
+    },
+    "": {
+        "ru": "",
+        "en": "",
+        "ee": "",
+    },
+    "": {
+        "ru": "",
+        "en": "",
+        "ee": "",
+    },
 }

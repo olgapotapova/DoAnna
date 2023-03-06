@@ -34,7 +34,7 @@
     margin-bottom: 6%;
 }
 
-.lng-about, .lng-laulustuudio, .lng-kuulmistest, .lng-kontaktid, .lng-räägivad{ 
+.lng-about, .lng-laulustuudio, .lng-kuulmistest, .lng-kontaktid, .lng-talking{ 
     color: var(--black-gold);
     font-family: "Playfair Display", serif;
     font-size: 40px;
@@ -396,12 +396,12 @@ h3{
         line-height: 1.6;
     }
 
-    .reviews-text span, .reviews-text-revers span{
+    .lng-milana, .lng-katrin, .lng-olga{
         display: flex;
         font-weight: bold;
         align-items: end;
         justify-content: flex-end;
-        margin-top: 22%;
+        margin-top: 10%;
     }
 
     .musical-pattern-reviews{
@@ -432,6 +432,12 @@ h3{
     }
 
   /*////////////// End of reviews /////////////*/
+
+  /*////////////// Contact /////////////*/
+
+
+
+  /*////////////// End of contact /////////////*/
    
   /*////////////// Adaptive version /////////////*/
 
