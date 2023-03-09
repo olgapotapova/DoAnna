@@ -99,6 +99,9 @@ html, body {
   height: auto;
   margin: 1px -2px 4px 4px;
 }
+.icon:hover,.icon-telegram:hover{
+  filter: invert(77%) sepia(51%) saturate(306%) hue-rotate(8deg) brightness(100%) contrast(87%);
+}
 .control, 
 .control * {	
 	box-sizing: content-box;

@@ -139,9 +139,50 @@ const langArr = {
         "en": "Name",
         "ee": "Nimi",
     },
+    "vocals": {
+        "ru": "Вокал",
+        "en": "Vocals",
+        "ee": "Vokaal",
+    },
+    "solovocals": {
+        "ru": "Сольный вокал для взрослых и детей",
+        "en": "Solo vocals for adults and children",
+        "ee": "Soolovokaal täiskasvanutele ja lastele",
+    },
+    "trios": {
+        "ru": "Пение для взрослых в дуэте и ​​трио",
+        "en": "Singing for adults in duets and trios",
+        "ee": "Täiskasvanutele laulmine duettides ja triodes",
+    },
+    "group": {
+        "ru": "Для детей (3-6 лет) - пение в группе (до 5 человек)",
+        "en": "For children (3-6 years old) - singing in a group (up to 5 people)",
+        "ee": "Lastele (3-6-aastased) - laulmine rühmas (kuni 5 inimest)",
+    },
+    "options": {
+        "ru": "Другие возможности",
+        "en": "Other options",
+        "ee": "Muud võimalused",
+    },
+    "piano": {
+        "ru": "Фортепиано (для начинающих)",
+        "en": "Piano (for beginners)",
+        "ee": "Klaverimäng (algajatele)",
+    },
+    "solfeggio": {
+        "ru": "Сольфеджио",
+        "en": "Solfeggio",
+        "ee": "Solfeggio",
+    },
+    "therapy": {
+        "ru": "Дыхательные практики / Терапия.",
+        "en": "Breathing practices / Therapy.",
+        "ee": "Hingamispraktikad / Teraapia.",
+    },
     "": {
         "ru": "",
         "en": "",
         "ee": "",
     },
+
 }
