@@ -5,12 +5,11 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
-
 .menu-all{
   background-color: rgb(17, 17, 15, 0.95);
-  box-shadow: -1px 11px 17px 8px rgba(0,0,0,0.9);
-  -webkit-box-shadow: -1px 11px 17px 8px rgba(0,0,0,0.9);
-  -moz-box-shadow: -1px 11px 17px 8px rgba(0,0,0,0.9);
+  box-shadow: -1px 11px 17px 8px rgba(17, 17, 15, 0.95);
+  -webkit-box-shadow: -1px 11px 17px 8px rgba(17, 17, 15, 0.95);
+  -moz-box-shadow: -1px 11px 17px 8px rgba(17, 17, 15, 0.95);
   height: 75px;
   width: 100%;
 }
@@ -29,11 +28,9 @@ html, body {
     background-size: cover;
     background-position: 35% 75%;
   }
-
 .app{
     position: relative;
 }
-
 .content{
     margin: 0;
     padding: 0;
@@ -49,14 +46,17 @@ html, body {
     display: flex;
     z-index: 1;
 }
-
+.full-logo-img{
+  margin-left: auto;
+  margin-right: auto;
+}
 .full-logo{
     position: relative;
-    margin-left: 55.5%;
+    min-width: 400px;
+    margin-left: 48.5%;
     margin-right: auto;
     padding-top: 6.5%;
 }
-
 #logo-header{
     position: relative;
     display: flex;
@@ -69,11 +69,9 @@ html, body {
     font-size: 48px;
     text-align: center;
     vertical-align: top;
-    letter-spacing: 3px;
     line-height: 100%;
     white-space: nowrap;
 }
-
 .social-media{
   display: flex;
   justify-content: center;
@@ -82,28 +80,91 @@ html, body {
   margin-top: 30px;
   margin-left: 20px;
 }
-
 .footer-social-media-pages{
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
-
 .social-media-footer{
   display: none;
 }
-
 .icon{
   width: 30px;
   height: auto;
   margin: 3px;
 }
-
 .icon-telegram{
   width: 34px;
   height: auto;
   margin: 1px -2px 4px 4px;
+}
+.control, 
+.control * {	
+	box-sizing: content-box;
+	letter-spacing: 0;
+}
+.control {
+  position: absolute;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+  margin: 170px auto auto 102%;
+	padding: 28px;
+  width: 25px;
+	height: 20px;
+	font-size: 0;
+	white-space: nowrap;
+	text-align: center;
+	cursor: pointer;
+}
+.control,
+.control .left,
+.control .right,
+.control:before {
+	display: inline-block;
+	vertical-align: middle;
+	transition: border 0.2s, width 0.2s, height 0.2s, margin 0.2s;
+}
+.control:before {
+	content: "";
+  height: 20px;
+}
+.control.pause .left,
+.control.pause .right {
+	margin: 0;
+  margin-top: -1px;
+  border-left: 2.96px solid #ffffff;
+	border-top: 0 solid transparent;
+	border-bottom: 0 solid transparent;
+  height: 22.992px;
+}
+.control.pause .left {
+	border-right: 12.4px solid transparent;
+}
+.control.play .left {
+  margin-left: 5.66666667px;
+  margin-bottom: 90px;
+  border-left: 16.496px solid #ffffff;
+  border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 0px solid transparent;
+  height: 1px;
+}
+.control.play .right {
+	margin: 0;
+  margin-left: -16px;
+  margin-bottom: 90px;
+  border-left: 16.496px solid #ffffff;
+  border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	height: 0px;
+}
+.control:hover {
+	border-color: var(--black-gold);
+}
+.control:hover .left,
+.control:hover .right {
+	border-left-color: var(--black-gold);
 }
 
 /*////////////// End of logo styles /////////////*/
@@ -119,7 +180,6 @@ html, body {
   top:auto;
   z-index: 1000;
 }
-
   .telephone{
     width: 100%;
     min-width: 100%;
@@ -133,15 +193,26 @@ html, body {
     text-align: center;
     padding-left: 15px;
   }
-
   
 /*////// Main page footer end /////////*/
 
 
 /*////////////// Adaptive version /////////////*/
 
+@media screen and (max-width: 1100px) {
+  .full-logo{
+    margin-left: 42.5%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
 
+  .full-logo{
+    min-width: 320px;
+  }
+  .control{
+    margin: 145px auto auto 102%;
+  }
   .full-logo-img{
     max-width: 280px;
     padding-top: 10%;
@@ -173,13 +244,13 @@ html, body {
     min-width: 100%;
   }
   .full-logo{
-    padding-top: 5%;
+    padding-top: 1%;
     margin-left: auto !important;
     margin-right: auto !important;
   }
   .full-logo-img{
     max-width: 100%;
-    padding-top: 5%;
+    padding-top: 1%;
   }
   #logo-header{
     margin-left: 0px;
@@ -187,6 +258,9 @@ html, body {
   }
   .social-media{
     margin-top: 30px;
+  }
+  .control{
+    margin: 440px auto auto 40%;
   }
 }
 

@@ -32,11 +32,57 @@
             </div>
             <h2 class="lng-kontaktid">Kontaktid</h2>
 
+            <img class="img-toompuestee" src="images/Place.png" alt="Tallinn. Toompuestee 20.">
+            <div class="message-button-box">
+                <button class="openModal lng-message">Saada sõnum</button>
+            </div>
+            <div class="address">
+                <dl>
+                    <dt>Aadress:</dt>
+                    <dt>Instagram:</dt>
+                    <dt>Facebook:</dt>
+                    <dt>Telefon:</dt>
+                </dl>
+                <dl class="list-right">
+                    <dt>Eesti, Harjumaa, Tallinn, Toompuestee 20</dt>
+                    <dt><a href="https://www.instagram.com/dotonaanna" target="_blank">https://www.instagram.com/dotonaanna</a></dt>
+                    <dt><a href="https://www.facebook.com/anna.dytyna" target="_blank">https://www.facebook.com/anna.dytyna</a></dt>
+                    <dt><a href="tel:+372 5564 4084">+372 5564 4084</a></dt>
+                </dl>
+            </div>
+
+            <dialog class="modal">
+                <img class="img-message" src="images/message.png" alt="Papirus.">
+                <h2 class="lng-form">Kas teil on küsimusi?</h2>
+                <!-- <form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain" class="formWithValidation"> -->
+                <form enctype="text/plain" class="formWithValidation">
+                    <div class="message-box">
+                        <label for="Name" class="lng-name">Nimi:</label>
+                        <input class="name input field" type="text" name="Name" id="Name">
+                        
+                        <label for="Email" class="lng-email">Email:</label>
+                        <input class="email input" type="text" name="Email" id="Email">
+                        
+                        <label for="Textarea" class="lng-question">Küsimus:</label>
+                        <textarea class="textarea field" type="textarea" name="Textarea" id="Textarea"></textarea>
+                    </div>
+                    <div class="message-button-box">
+                        <button class="validateBtn closeModal lng-submit" type="submit" name="submit" value='Validate'>Saada</button>
+                    </div>
+                    <!-- <div>value="Submit"</div> -->
+                </form>
+
+            </dialog>
+
+
             <div class="final-pattern">
                 <img  src="images/Pattern.svg" alt="Pattern from notes.">
             </div>    
         </div>
     </div>
+
+    <script type="text/javascript" src="scripts/modal.js"></script>
+    <!-- <script type="text/javascript" src="scripts/validation.js"></script> -->
     <script type="text/javascript" src="scripts/setHeader.js"></script>
     <script type="text/javascript" src="scripts/menu.js"></script>
     <script type="text/javascript" src="scripts/setFooter.js"></script>

@@ -114,30 +114,30 @@ const langArr = {
         "en": "Olga",
         "ee": "Olga",
     },
-    "": {
-        "ru": "",
-        "en": "",
-        "ee": "",
+    "message": {
+        "ru": "Отправить сообщение",
+        "en": "Send a message",
+        "ee": "Saada sõnum",
     },
-    "": {
-        "ru": "",
-        "en": "",
-        "ee": "",
+    "form": {
+        "ru": "Есть вопросы?",
+        "en": "Do you have any questions?",
+        "ee": "Kas teil on küsimusi?",
     },
-    "": {
-        "ru": "",
-        "en": "",
-        "ee": "",
+    "submit": {
+        "ru": "Отправить",
+        "en": "Send",
+        "ee": "Saada",
     },
-    "": {
-        "ru": "",
-        "en": "",
-        "ee": "",
+    "question": {
+        "ru": "Вопрос:",
+        "en": "Question:",
+        "ee": "Küsimus:",
     },
-    "": {
-        "ru": "",
-        "en": "",
-        "ee": "",
+    "name": {
+        "ru": "Имя",
+        "en": "Name",
+        "ee": "Nimi",
     },
     "": {
         "ru": "",
