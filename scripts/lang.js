@@ -101,7 +101,7 @@ const langArr = {
     },
     "katrin": {
         "ru": "Катрин",
-        "en": "katrin",
+        "en": "Katrin",
         "ee": "Katrin",
     },
     "milana": {
