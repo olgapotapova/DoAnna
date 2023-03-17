@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game test</title>
+    <link type="Image/x-icon" href="images/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/sinus.css">
+</head>
+<body>
+    <div class="app">
+        <div id="site4" class="content-pages">
+            <div class="menu-all">
+                <a class="left-logo-href" href="index.html"><img class="left-logo-img" src="images/Logo.svg" alt="Logo of DoAnna."></a>
+                <div class="menu-left"> 
+                <label for="standard-select">en</label>
+                    <div class="select">
+                        <select id="standard-select" class="change-lang">
+                            <option  value="en" selected>en</option> 
+                            <option value="ru">ru</option>
+                            <option value="ee">est</option>
+                        </select>
+                        <span class="focus"></span>  
+                    </div>
+                </div>
+            </div>
+            <h2 class="lng-kuulmistest">Kuulmistest</h2>
+
+            <!-- <canvas id="cl" width="400" height="200"></canvas><br/> -->
+            <div id="content">
+                <!-- <input type="file" id="thefile" accept="audio/*" /> -->
+                <canvas id="canvas"></canvas>
+                <audio id="audio" controls  crossorigin="anonymous"></audio>
+              </div>
+
+
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/sinus.js"></script>
+    <script type="text/javascript" src="scripts/setHeader.js"></script>
+    <script type="text/javascript" src="scripts/menu.js"></script>
+    <script type="text/javascript" src="scripts/setFooter.js"></script>
+    <script type="text/javascript" src="scripts/lang.js"></script>
+    <script type="text/javascript" src="scripts/translate.js"></script>
+</body>
+</html>
