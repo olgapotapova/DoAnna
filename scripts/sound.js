@@ -7,5 +7,5 @@ el.onclick = function() {
 
 function soundToggle() {
     return audio.paused ? audio.play() : audio.pause();  
-  };
+};
 

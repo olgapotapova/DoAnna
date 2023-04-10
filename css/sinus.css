@@ -1,29 +1,180 @@
-/* #cl{
-    width: 400px;
-    height: 200px;
-    border: 3px solid black;
-    margin: 40px;
-    margin-bottom: 200px;
-} */
-
-#thefile {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 100;
-  }
-  
+  .message-button-box{
+    display: flex;
+    justify-content: center;
+    min-height: 126px;
+    margin-bottom: 10%;
+}
   #canvas {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
+    display: flex;
+    width: 70%;
+    height: 25% !important;
+    max-height: 25% !important;
+    border: 1px solid;
+    margin-left:auto;
+    margin-right:auto;   
+    background: var(--header-fon);
+    border-radius: 15px;
+    margin-bottom: 100px;
+  } 
   audio {
     position: fixed;
     left: 10px;
     bottom: 10px;
     width: calc(100% - 20px);
   }
+  .modal-game-test{
+    position: absolute;
+    z-index: 1;
+    border: 0; 
+    border-radius: 15px;    
+    min-width: 50%; 
+    max-width: 700px;
+    width: 50%; 
+    background-color: transparent;
+    overflow: hidden;
+    max-height: 600px;
+    height: 600px;
+    left: 20px;
+    top: 110%;
+    padding: .5em 1em;
+    cursor: pointer;
+    visibility: hidden;
+    transform: scale(0.1);
+    transition: transform 200ms;
+}
+.modal-game-test.dialog-scale{
+	background-color: transparent;
+	visibility: visible;
+	transform: scale(1);
+}
+.modal-game-test.dialog-scale::backdrop {
+  background-color: rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.modal-game-test-box{
+    position: relative;
+    z-index: 10;
+    background: #ffffff !important;
+    width: 100%;
+    height: 590px;
+    max-height: 590px;
+    border-radius: 15px; 
+    margin: 0;
+    padding: .5em 1em;
+    cursor: default;
+}
+  .game-modal-header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    color: var(--black-gold);
+  }
+
+  ul {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+  }
+  .checkbox-square{
+    display:none;
+  }
+  .checkbox-square + label span{
+    display:inline-block;
+    width:25px;
+    height:19px;
+    margin: 0 5px -4px 0; /*layout relationship between check and label*/
+  }
+  .checkbox-square + label span:before,
+  .checkbox-square + label span:after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 1.1rem;
+    height: 1.1rem;
+    background: var(--dark);
+    border: 1px solid var(--black-gold); 
+    border-radius: 5px;
+  }
+  .checkbox-square:checked + label span:after {
+    content: "\2713";
+    font-size: 12px;
+    font-weight: 800;
+    padding-left: 0.1rem;
+    color: var(--black-gold);
+  }
+  .repeat{
+    color: var(--ok);
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    padding-left: 2.5rem;
+    cursor: pointer;
+  }
+  .modal-game-test-box > .modal-game-test > .repeat:hover{
+    color: #000000;
+  }
+  .modal-game-test.modal-game-test-box.repeat:hover{
+    color: #000000;
+  }
+  .repeat:hover{
+    color: #000000 !important;
+    filter: invert(50%);
+  }
+  .close-x{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .close-x:hover{
+    color: #418A40 !important;
+  }
+  .modal-game-test.modal-game-test-box:last-child:hover{
+    color: #418A40  !important;
+  }
+  .modal-game-test:hover{
+    color: #418A40  !important;
+  }
+  .add{
+    position: relative;
+    display: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  #add4{
+    max-width: 60%;
+  }
+  .visible{
+    display: flex;
+  }
+  .green-text, .blue-text, .black-text, .red-text{
+    text-align: center;
+  }
+  .green-text{
+    color: var(--ok);
+  }
+  .blue-text{
+    color: var(--good);
+  }
+  .black-text{
+    color: #000000;
+  }
+  .red-text{
+    color: var(--error);
+  }
+

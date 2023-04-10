@@ -17,6 +17,11 @@ openModal.addEventListener('click', () => {
 // closeModal.addEventListener('click', () => {
 //     modal.close();
 // });
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    modal.close();
+});
+
 var generateError = function (text) {
     var error = document.createElement('div')
     error.className = 'error'
@@ -63,6 +68,6 @@ form.addEventListener('submit', function (event) {
     if((checkEmail() == true)&&(checkFieldsPresence() !== false)){
         modal.close();
     }
-})
+});
 
 

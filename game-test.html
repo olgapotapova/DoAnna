@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game test</title>
-    <link type="Image/x-icon" href="images/favicon.ico" rel="icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/pages.css">
-</head>
-<body>
-    <div class="app">
-        <div id="site4" class="content-pages">
-            <div class="menu-all">
-                <a class="left-logo-href" href="index.html"><img class="left-logo-img" src="images/Logo.svg" alt="Logo of DoAnna."></a>
-                <div class="menu-left"> 
-                <label for="standard-select">en</label>
-                    <div class="select">
-                        <select id="standard-select" class="change-lang">
-                            <option  value="en" selected>en</option> 
-                            <option value="ru">ru</option>
-                            <option value="ee">est</option>
-                        </select>
-                        <span class="focus"></span>  
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game test</title>
+        <link type="Image/x-icon" href="images/favicon.ico" rel="icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/pages.css">
+        <link rel="stylesheet" href="css/sinus.css">
+    </head>
+    <body>
+        <div class="app">
+            <div id="site4" class="content-pages">
+                <div class="menu-all">
+                    <a class="left-logo-href" href="index.html"><img class="left-logo-img" src="images/Logo.svg" alt="Logo of DoAnna."></a>
+                    <div class="menu-left"> 
+                    <label for="standard-select">en</label>
+                        <div class="select">
+                            <select id="standard-select" class="change-lang">
+                                <option value="en" selected>en</option> 
+                                <option value="ru">ru</option>
+                                <option value="ee">est</option>
+                            </select>
+                            <span class="focus"></span>  
+                        </div>
                     </div>
                 </div>
+                <h2 class="lng-kuulmistest">Kuulmistest</h2>
+                <p class="game-text">Öeldakse, et geenius koosneb 1% andest ja 99% tööjõust, siin saate kontrollida, kas teil on muusikas 1% geeniust. Vajutage nuppu ja kuulake akordi.</p>
+                <p class="game-text">Enne nupule klõpsamist lülitage oma seadme heli sisse.</p>
+                <div id="content">
+                    <canvas id="canvas"></canvas>
+                    <audio id="audio" controls  crossorigin="anonymous"></audio>
+                </div>
+                <div class="add" id="add1"><p class="green-text">Palju õnne, teil on täiuslik kõrv!</p></div>
+                <div class="add" id="add2"><p class="blue-text">Väga hea, on arenguruumi!</p></div>
+                <div class="add" id="add3"><p class="black-text">Pole viga, aga saab paremini</p></div>
+                <div class="add" id="add4"><p class="red-text">Kahjuks pole ühtegi õiget vastust, aga oma kuulmist võib arendada tundides.</p></div>
+                <div class="message-button-box control openModal">
+                    <button class="validateBtn lng-submit" type="submit" name="submit" value='Validate'>Kuulake kooskõla</button>
+                </div>
+                <dialog class="modal-game-test">
+                    <div class="modal-game-test-box">                
+                        <h4 class="game-modal-header">Valige õige vastus:</h4>
+                        <form id="form-play">
+                            <ul>
+                                <li class="checkbox">
+                                <input class="checkbox-square" name="choice" type="checkbox" id="check1" checked/>
+                                <label for="check1"><span></span>Akordil on 2 nooti</label>
+                                </li>
+                                <li class="checkbox">
+                                <input class="checkbox-square" name="choice" type="checkbox" id="check2"/>
+                                <label for="check2"><span></span>Akordil on 3 nooti</label>
+                                </li>
+                                <li class="checkbox">
+                                <input class="checkbox-square" name="choice" type="checkbox" id="check3"/>
+                                <label for="check3"><span></span>See pole akord, kõlas ainult 1 noot</label>
+                                </li>
+                            </ul>
+                            <h5 class="repeat">Kuula uuesti</h5>
+                            <div class="message-button-box control closeModal">
+                                <button class="validateBtn lng-submit" type="submit" name="submit">Saada</button>
+                            </div>
+                            <button class="close-x" name="cancel">&#10006;</button>
+                        </form>
+                    </div>
+                </dialog>
             </div>
-            <h2 class="lng-kuulmistest">Kuulmistest</h2>
-            <p style="text-align: center; font-family: 'Playfair Display', serif; margin-bottom: 12%;margin-top: 5%; font-size: 20px;">Page under construction</p>
-
-            <div class="final-pattern">
-                <img  src="images/Pattern.svg" alt="Pattern from notes.">
-            </div>    
         </div>
-    </div>
-    <script type="text/javascript" src="scripts/setHeader.js"></script>
-    <script type="text/javascript" src="scripts/menu.js"></script>
-    <script type="text/javascript" src="scripts/setFooter.js"></script>
-    <script type="text/javascript" src="scripts/lang.js"></script>
-    <script type="text/javascript" src="scripts/translate.js"></script>
-</body>
+        <script type="text/javascript" src="scripts/sinus.js"></script>
+        <script type="text/javascript" src="scripts/setHeader.js"></script>
+        <script type="text/javascript" src="scripts/menu.js"></script>
+        <script type="text/javascript" src="scripts/setFooter.js"></script>
+        <script type="text/javascript" src="scripts/lang.js"></script>
+        <script type="text/javascript" src="scripts/translate.js"></script>
+    </body>
 </html>
