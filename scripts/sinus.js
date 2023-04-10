@@ -45,7 +45,7 @@ var correctAnswerCounter;
 //   const target = removeEventListener.target;
 // };
 play_file = function(){ 
-      audio.src = rand_audio;
+      // audio.src = rand_audio;
       audio.load();
       audio.play();
       var context = new AudioContext();
@@ -60,7 +60,7 @@ play_file = function(){
       analyser.fftSize = 256;
     //   var bufferLength = analyser.frequencyBinCount;
       var bufferLength = analyser.frequencyBinCount * 5;
-      console.log(bufferLength); 
+      // console.log(bufferLength); 
       var dataArray = new Uint8Array(bufferLength);  
       var WIDTH = canvas.width;
       var HEIGHT = canvas.height;
@@ -91,11 +91,11 @@ play_file = function(){
 
 closeModal.addEventListener('click', () => {
   if(roundСounter >= 5){
-    if(correctAnswerCounter == 5){
+    if(correctAnswerCounter == 4){
       add1.classList.add('visible');
-    }else if(correctAnswerCounter == 4){
-      add2.classList.add('visible');
     }else if(correctAnswerCounter == 3){
+      add2.classList.add('visible');
+    }else if(correctAnswerCounter == 2){
       add3.classList.add('visible');
     }else{
       add4.classList.add('visible');
@@ -104,20 +104,18 @@ closeModal.addEventListener('click', () => {
 
     modal.close();
   }else{
+  var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
+  var rand_audio_index = Math.round(Math.random()*(audios.length-1));
+  rand_audio = audios[rand_audio_index];
+
+  // console.log(audio.src);
+
   if ((check3.checked && audio.src.includes('mono')) || (check1.checked && audio.src.includes('duet')) || (check2.checked && audio.src.includes('trio')) ) {  
-      console.log(audio.src);
       correctAnswerCounter++;
       console.log(correctAnswerCounter);
-      console.log('ok');
-      var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
-      var rand_audio_index = Math.round(Math.random()*(audios.length-1));
-      rand_audio = audios[rand_audio_index];
       beginningOfThePlay(); 
-
     }else{
-      var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
-      var rand_audio_index = Math.round(Math.random()*(audios.length-1));
-      rand_audio = audios[rand_audio_index];
+      console.log(correctAnswerCounter);
       beginningOfThePlay();
     };
 	}
@@ -139,6 +137,7 @@ openModal.addEventListener('click', () => {
     var rand_audio_index = Math.round(Math.random()*(audios.length-1));
     rand_audio = audios[rand_audio_index];
     beginningOfThePlay(); 
+    console.log(correctAnswerCounter);
     setTimeout(() => {
       modal.showModal(); 
       modal.classList.add('dialog-scale');
@@ -147,12 +146,17 @@ openModal.addEventListener('click', () => {
 });  
 
 function beginningOfThePlay(){
+  audio.src = rand_audio;
+  console.log(audio.src);
+
   roundСounter ++;
   play_file();
 }
 
 repeat.addEventListener('click', () => {
   setTimeout(() => {
+    audio.src = rand_audio;
+    console.log(audio.src);
     play_file();
   }, "500"); 
 });
