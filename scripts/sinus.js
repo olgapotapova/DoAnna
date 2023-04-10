@@ -91,7 +91,6 @@ play_file = function(){
 
 closeModal.addEventListener('click', () => {
   if(roundСounter >= 5){
-    modal.close();
     if(correctAnswerCounter == 5){
       add1.classList.add('visible');
     }else if(correctAnswerCounter == 4){
@@ -102,19 +101,21 @@ closeModal.addEventListener('click', () => {
       add4.classList.add('visible');
     }
     correctAnswerCounter = 0;
+
+    modal.close();
   }else{
   if ((check3.checked && audio.src.includes('mono')) || (check1.checked && audio.src.includes('duet')) || (check2.checked && audio.src.includes('trio')) ) {  
       console.log(audio.src);
       correctAnswerCounter++;
       console.log(correctAnswerCounter);
       console.log('ok');
-      var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12s.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
+      var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
       var rand_audio_index = Math.round(Math.random()*(audios.length-1));
       rand_audio = audios[rand_audio_index];
       beginningOfThePlay(); 
 
     }else{
-      var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12s.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
+      var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
       var rand_audio_index = Math.round(Math.random()*(audios.length-1));
       rand_audio = audios[rand_audio_index];
       beginningOfThePlay();
@@ -127,10 +128,14 @@ closeX.addEventListener('click', () => {
 });
 
 openModal.addEventListener('click', () => {
+    add1.classList.remove('visible');
+    add2.classList.remove('visible');
+    add3.classList.remove('visible');
+    add4.classList.remove('visible');
     roundСounter = 0; 
     correctAnswerCounter = 0;
 
-    var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12s.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
+    var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
     var rand_audio_index = Math.round(Math.random()*(audios.length-1));
     rand_audio = audios[rand_audio_index];
     beginningOfThePlay(); 
