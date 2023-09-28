@@ -10,7 +10,7 @@ var headerText = `<div class="menu-right-container">
         <nav>
             <ul>
                 <li><a href="about-me.html" class="lng-minust">Minust</a></li>
-                <li><a href="singing-studio.html" class="lng-vokalstudio">Laulastuudio</a></li>
+                <li><a href="singing-studio.html" class="lng-singingstudio">Laulastuudio</a></li>
                 <li><a href="game-test.html" class="lng-kuulamismäng">Kuulamismäng</a></li>
                 <li><a href="reviews.html" class="lng-tagasaside">Tagasaside</a></li>
                 <li><a href="contact.html" class="lng-kontakt">Kontakt</a></li>

@@ -8,26 +8,47 @@ select.addEventListener('change', changeURLLanguage);
 function changeURLLanguage() {
     let lang = select.value;
     location.href = window.location.pathname + '#' + lang;
+    const selectedLang = select.value;
+    localStorage.setItem('selectedLang', selectedLang);
     location.reload();
 }
+
+
+
 
 
 function changeLanguage() {
     let hash = window.location.hash;
     hash = hash.substring(1);
-    if (!allLang.includes(hash)) {
+
+    //Seach language from local storage
+    const selectedLangLocalStorage = localStorage.getItem('selectedLang');
+    if (selectedLangLocalStorage) {
+    // Set language by local storage
+        select.value = selectedLangLocalStorage;
+        location.href = window.location.pathname + '#' + selectedLangLocalStorage;
+
+    }
+
+    else if (!allLang.includes(hash)) {
         location.href = window.location.pathname + '#en';
         location.reload();
+        select.value = hash;
+
     }
-    select.value = hash;
-    document.querySelector('title').innerHTML = langArr['laulustuudio'][hash];
+        
+    
+    language = select.value;
+    document.querySelector('title').innerHTML = langArr['laulustuudio'][language];
     for (let key in langArr) {
         let elem = document.querySelector('.lng-' + key);
         if (elem) {
-            elem.innerHTML = langArr[key][hash];
+            elem.innerHTML = langArr[key][language];
         }
 
     }
+    
+
 }
 
 
