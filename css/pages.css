@@ -177,8 +177,16 @@ h3{
 
 .footer-page{
     background-color: var(--header-fon);
-    bottom: 0px !important;
     min-height: 150px;   
+    position: absolute;
+    margin: auto 0 0 0;
+    display: flex;
+    width: 100%;
+    min-width: 100%;
+    /* bottom: 38px; */
+    bottom: 0px !important;
+    top:auto;
+    z-index: 1000;
 }
 
 .footer-social-media-pages{
@@ -209,28 +217,29 @@ h3{
     margin: 1px -2px 4px 4px;
   }
 
-.footer-page{
-    position: fixed;
+/* .footer-page{
+    position: absolute;
+    margin: auto 0 0 0;
     display: flex;
     width: 100%;
     min-width: 100%;
-    bottom: 38px;
+    bottom: 0px !important;
     top:auto;
     z-index: 1000;
-  }
+  } */
   
-    .telephone{
-      width: 100%;
-      min-width: 100%;
-      color: #ffffff;
-      font-family: "Playfair Display", serif;
-      font-style: italic;
-      font-weight: normal;
-      font-variant-numeric: oldstyle-nums;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-      text-align: center;
-    }
+.telephone{
+    width: 100%;
+    min-width: 100%;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: normal;
+    font-variant-numeric: oldstyle-nums;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
    
   /*////// End of pages footer /////////*/
 
@@ -513,8 +522,10 @@ h3{
         background-color: rgba(0,0,0,0.3);
         z-index: -1;
       }
-    .lng-submit{
-        display: inline-flex;
+    .lng-submit,
+    .lng-listen{
+        /* display: inline-flex; */
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
@@ -650,8 +661,8 @@ h3{
         max-width: 70%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 7%;
-        margin-bottom: 7%;
+        margin-top: 3%;
+        margin-bottom: 3%;
       }
   
   /*////////////// End of game-test /////////////*/

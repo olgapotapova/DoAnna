@@ -129,6 +129,11 @@ const langArr = {
         "en": "Send",
         "ee": "Saada",
     },
+    "listen": {
+        "ru": "Прослушайте аккорд",
+        "en": "Listen to the harmony",
+        "ee": "Kuulake kooskõla",
+    },
     "question": {
         "ru": "Вопрос:",
         "en": "Question:",

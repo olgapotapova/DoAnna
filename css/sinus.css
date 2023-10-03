@@ -1,26 +1,31 @@
-  .message-button-box{
+.message-button-box{
     display: flex;
     justify-content: center;
     min-height: 126px;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
+    padding-bottom: 20%;
+    margin-top: 3% !important;
 }
   #canvas {
     display: flex;
     width: 70%;
-    height: 25% !important;
-    max-height: 25% !important;
+    height: 150px !important;
+    max-height: 150px !important;
+    /* height: 25% !important;
+    max-height: 25% !important; */
     border: 1px solid;
     margin-left:auto;
     margin-right:auto;   
     background: var(--header-fon);
     border-radius: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 2%;
   } 
   audio {
-    position: fixed;
+    position: absolute;
     left: 10px;
     bottom: 10px;
     width: calc(100% - 20px);
+    visibility: hidden;
   }
   .modal-game-test{
     position: absolute;
@@ -32,10 +37,11 @@
     width: 50%; 
     background-color: transparent;
     overflow: hidden;
-    max-height: 600px;
-    height: 600px;
+    max-height: 500px;
+    height: 500px;
     left: 20px;
-    top: 110%;
+    /* top: 110%; */
+    /* top: 0%; */
     padding: .5em 1em;
     cursor: pointer;
     visibility: hidden;
@@ -56,11 +62,12 @@
     z-index: 10;
     background: #ffffff !important;
     width: 100%;
-    height: 590px;
-    max-height: 590px;
+    height: 490px;
+    max-height: 490px;
     border-radius: 15px; 
     margin: 0;
-    padding: .5em 1em;
+    /* padding: .5em 1em; */
+    padding: .1em 1em;
     cursor: default;
 }
   .game-modal-header{
@@ -127,13 +134,15 @@
     filter: invert(50%);
   }
   .close-x{
+    position: relative;
+    z-index: 1000;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 22px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 30px;
   }
   .close-x:hover{
     color: #418A40 !important;

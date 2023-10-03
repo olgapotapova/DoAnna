@@ -1,9 +1,10 @@
 body {
-  min-height: 100vh;
-  height: 100vh;
+  /* min-height: 100vh;
+  height: 100vh;  */
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  /* position: static; */
 }
 .menu-all{
   background-color: rgb(17, 17, 15, 0.95);
@@ -17,24 +18,43 @@ body {
 /*////////////// Main styles /////////////*/
 
 html, body {
-    height: 100vh;
-    min-height: 100vh;
-    background: url(../images/Anna.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: 35% 75%;
+  width: 100%;
+  min-width: 100%;
+  /* height: 100vh;
+  min-height: 100vh; */
+  background: url(../images/Anna.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    /* background-position: 35% 75%; */
   }
 .app{
     position: relative;
+    min-height: 100vh;
 }
 .content{
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
+
+/* .img{
+  position: absolute;
+  width: 100%;
+  min-width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  background: url(../images/Anna.png);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
 
 /*////////////// End of main styles /////////////*/
 
@@ -56,6 +76,7 @@ html, body {
     margin-left: 48.5%;
     margin-right: auto;
     padding-top: 6.5%;
+    margin-bottom: 10%;
 }
 #logo-header{
     position: relative;
@@ -175,13 +196,16 @@ html, body {
 /*////// Main page footer /////////*/
 
 .footer-page{
-  position: fixed;
+  position: absolute;
   display: flex;
   width: 100%;
   min-width: 100%;
-  bottom: 38px;
+  margin: auto 0 0 0;
+  /* bottom: 38px; */
+  bottom: 0;
   top:auto;
   z-index: 1000;
+  min-height: 50px;
 }
   .telephone{
     width: 100%;
@@ -205,6 +229,7 @@ html, body {
 @media screen and (max-width: 1100px) {
   .full-logo{
     margin-left: 42.5%;
+    margin-bottom: 14%;
   }
 }
 
@@ -212,6 +237,7 @@ html, body {
 
   .full-logo{
     min-width: 320px;
+    margin-bottom: 20%;
   }
   .control{
     margin: 145px auto auto 102%;
@@ -233,8 +259,10 @@ html, body {
 
 @media screen and (max-width: 800px){
   html, body{
-    height: 100vh;
-    min-height: 100vh;
+    /* height: 100vh;
+    min-height: 100vh; */
+    /* height: 100%;
+    min-height: 100%; */
     background: url(../images/Anna-mobile.png);
     background-repeat: no-repeat;
     background-attachment: fixed fixed;
@@ -265,9 +293,16 @@ html, body {
   .control{
     margin: 440px auto auto 40%;
   }
+  .footer-page{
+    bottom: -55%;
+  }
 }
 
 @media screen and (max-width: 640px){
+  /* html, body{
+    height: 100vh;
+    min-height: 100vh;
+  } */
   .full-logo-img{
     max-width: 280px;
     width: 280px;

@@ -29,6 +29,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  position: relative;
 }
 
 /* Remove standart style for all "ul" and "li", if it has class */

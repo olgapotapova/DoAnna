@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/pages.css">
@@ -42,8 +43,9 @@
                 <div class="add" id="add2"><p class="blue-text">Väga hea, on arenguruumi!</p></div>
                 <div class="add" id="add3"><p class="black-text">Pole viga, aga saab paremini</p></div>
                 <div class="add" id="add4"><p class="red-text">Kahjuks pole ühtegi õiget vastust, aga oma kuulmist võib arendada tundides.</p></div>
-                <div class="message-button-box control openModal">
-                    <button class="validateBtn lng-submit" type="submit" name="submit" value='Validate'>Kuulake kooskõla</button>
+                        <!-- <div class="message-button-box control openModal"> -->
+                            <div class="message-button-box control">
+                    <button class="validateBtn openModal lng-listen" type="submit" name="submit" value='Validate'>Kuulake kooskõla</button>
                 </div>
                 <dialog class="modal-game-test">
                     <div class="modal-game-test-box">                
@@ -64,8 +66,10 @@
                                 </li>
                             </ul>
                             <h5 class="repeat">Kuula uuesti</h5>
-                            <div class="message-button-box control closeModal">
-                                <button class="validateBtn lng-submit" type="submit" name="submit">Saada</button>
+                            <!-- <div class="message-button-box control closeModal"> -->
+                                <div class="message-button-box control">
+                                    <button class="validateBtn closeModal lng-submit" type="submit" name="submit">Saada</button>
+                                </div>
                             </div>
                             <button class="close-x" name="cancel">&#10006;</button>
                         </form>
@@ -78,6 +82,6 @@
         <script type="text/javascript" src="scripts/menu.js"></script>
         <script type="text/javascript" src="scripts/setFooter.js"></script>
         <script type="text/javascript" src="scripts/lang.js"></script>
-        <script type="text/javascript" src="scripts/translate.js"></script>
+        <script type="text/javascript"  src="scripts/translate.js"></script>
     </body>
 </html>

@@ -109,7 +109,7 @@ header {
     border-radius: 15px;
     background: var(--dark);
     transform: translateX(100%);
-    transition: transform 1.8s;  
+    transition: transform 1.1s;  
   }
   .menu-right.active {
     transform: translateX(0);

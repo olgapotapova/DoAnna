@@ -13,14 +13,9 @@ function changeURLLanguage() {
     location.reload();
 }
 
-
-
-
-
 function changeLanguage() {
     let hash = window.location.hash;
     hash = hash.substring(1);
-
     //Seach language from local storage
     const selectedLangLocalStorage = localStorage.getItem('selectedLang');
     if (selectedLangLocalStorage) {
@@ -28,16 +23,13 @@ function changeLanguage() {
         select.value = selectedLangLocalStorage;
         location.href = window.location.pathname + '#' + selectedLangLocalStorage;
 
-    }
-
-    else if (!allLang.includes(hash)) {
+    }else if (!allLang.includes(hash)) {
         location.href = window.location.pathname + '#en';
         location.reload();
         select.value = hash;
 
     }
-        
-    
+           
     language = select.value;
     document.querySelector('title').innerHTML = langArr['laulustuudio'][language];
     for (let key in langArr) {
@@ -45,10 +37,7 @@ function changeLanguage() {
         if (elem) {
             elem.innerHTML = langArr[key][language];
         }
-
-    }
-    
-
+    }    
 }
 
 
