@@ -546,6 +546,7 @@ h3{
         box-shadow: 2px 0px 16px 7px rgba(125,110,58,0.31) inset;
         -webkit-box-shadow: 2px 0px 16px 7px rgba(125,110,58,0.31) inset;
         -moz-box-shadow: 2px 0px 16px 7px rgba(125,110,58,0.31) inset;
+        cursor: pointer;
     }
     .img-message{
         position: absolute;
