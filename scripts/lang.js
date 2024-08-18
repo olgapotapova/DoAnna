@@ -184,6 +184,51 @@ const langArr = {
         "en": "Breathing practices / Therapy.",
         "ee": "Hingamispraktikad / Teraapia.",
     },
+    "3": {
+        "ru": "В аккорде 3 ноты",
+        "en": "A chord has 3 notes",
+        "ee": "Akordil on 3 nooti",
+    },
+    "2": {
+        "ru": "В аккорде 2 ноты",
+        "en": "A chord has 2 notes",
+        "ee": "Akordil on 2 nooti",
+    },
+    "1": {
+        "ru": "Это не аккорд, прозвучала всего 1 нота",
+        "en": "It's not a chord, only 1 note sounded",
+        "ee": "See pole akord, kõlas ainult 1 noot",
+    },
+    "valige": {
+        "ru": "Выберите правильный ответ:",
+        "en": "Choose the correct answer:",
+        "ee": "Valige õige vastus:",
+    },
+    "kuulmistest": {
+        "ru": "Тест-игра",
+        "en": "Game test",
+        "ee": "Kuulamismäng",
+    },
+    "oeldakse": {
+        "ru": "Говорят, что гениальность – это 1% таланта и 99% труда, здесь вы можете проверить, есть ли у вас 1% гениальности в музыке. Нажмите кнопку и прослушайте аккорд.",
+        "en": "It is said that genius is 1% talent and 99% labor, here you can check if you have 1% genius in music. Press the button and listen to the chord.",
+        "ee": "Öeldakse, et geenius koosneb 1% andest ja 99% tööjõust, siin saate kontrollida, kas teil on muusikas 1% geeniust. Vajutage nuppu ja kuulake akordi.",
+    },
+    "enne": {
+        "ru": "Пожалуйста, включите звук вашего устройства, прежде чем нажимать кнопку.",
+        "en": "Please turn on your device's sound before clicking the button.",
+        "ee": "Enne nupule klõpsamist lülitage oma seadme heli sisse.",
+    },
+    "uuesti": {
+        "ru": "Послушать еще раз",
+        "en": "Listen again",
+        "ee": "Kuula uuesti",
+    },
+    "": {
+        "ru": "",
+        "en": "",
+        "ee": "",
+    },
     "": {
         "ru": "",
         "en": "",

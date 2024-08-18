@@ -81,11 +81,14 @@
     color: var(--black-gold);
   }
 
-  ul {
+  ul{
     list-style-type: none;
+  }
+  ul h6{
+    display: inline;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    font-style: italic;
+    font-style: italic; 
   }
   .checkbox-square{
     display:none;
@@ -95,6 +98,9 @@
     width:25px;
     height:19px;
     margin: 0 5px -4px 0; /*layout relationship between check and label*/
+  }
+  .checkbox-square:checked{
+    background: var(--dark);
   }
   .checkbox-square + label span:before,
   .checkbox-square + label span:after{

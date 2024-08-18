@@ -33,8 +33,8 @@
                     </div>
                 </div>
                 <h2 class="lng-kuulmistest">Kuulmistest</h2>
-                <p class="game-text">Öeldakse, et geenius koosneb 1% andest ja 99% tööjõust, siin saate kontrollida, kas teil on muusikas 1% geeniust. Vajutage nuppu ja kuulake akordi.</p>
-                <p class="game-text">Enne nupule klõpsamist lülitage oma seadme heli sisse.</p>
+                <p class="game-text lng-oeldakse">Öeldakse, et geenius koosneb 1% andest ja 99% tööjõust, siin saate kontrollida, kas teil on muusikas 1% geeniust. Vajutage nuppu ja kuulake akordi.</p>
+                <p class="game-text lng-enne">Enne nupule klõpsamist lülitage oma seadme heli sisse.</p>
                 <div id="content">
                     <canvas id="canvas"></canvas>
                     <audio id="audio" controls  crossorigin="anonymous"></audio>
@@ -43,36 +43,34 @@
                 <div class="add" id="add2"><p class="blue-text">Väga hea, on arenguruumi!</p></div>
                 <div class="add" id="add3"><p class="black-text">Pole viga, aga saab paremini</p></div>
                 <div class="add" id="add4"><p class="red-text">Kahjuks pole ühtegi õiget vastust, aga oma kuulmist võib arendada tundides.</p></div>
-                        <!-- <div class="message-button-box control openModal"> -->
-                            <div class="message-button-box control">
-                    <button class="validateBtn openModal lng-listen" type="submit" name="submit" value='Validate'>Kuulake kooskõla</button>
+                <div class="message-button-box control">
+                    <button class="validateBtn showModal lng-listen" type="submit" name="submit" value='Validate'>Kuulake kooskõla</button>
                 </div>
                 <dialog class="modal-game-test">
                     <div class="modal-game-test-box">                
-                        <h4 class="game-modal-header">Valige õige vastus:</h4>
-                        <form id="form-play">
+                        <h4 class="game-modal-header lng-valige">Valige õige vastus:</h4>
+                        <div id="form-play">
                             <ul>
                                 <li class="checkbox">
                                 <input class="checkbox-square" name="choice" type="checkbox" id="check1" checked/>
-                                <label for="check1"><span></span>Akordil on 2 nooti</label>
+                                <label for="check1"><span></span><h6 class="lng-3">Akordil on 3 nooti</h6></label>
                                 </li>
                                 <li class="checkbox">
                                 <input class="checkbox-square" name="choice" type="checkbox" id="check2"/>
-                                <label for="check2"><span></span>Akordil on 3 nooti</label>
+                                <label for="check2"><span></span><h6 class="lng-2">Akordil on 2 nooti</h6></label>
                                 </li>
                                 <li class="checkbox">
                                 <input class="checkbox-square" name="choice" type="checkbox" id="check3"/>
-                                <label for="check3"><span></span>See pole akord, kõlas ainult 1 noot</label>
+                                <label for="check3"><span></span><h6 class="lng-1">See pole akord, kõlas ainult 1 noot</h6></label>
                                 </li>
                             </ul>
-                            <h5 class="repeat">Kuula uuesti</h5>
-                            <!-- <div class="message-button-box control closeModal"> -->
-                                <div class="message-button-box control">
+                            <h5 class="repeat lng-uuesti">Kuula uuesti</h5>
+                                <div class="message-button-box control closeModal">
                                     <button class="validateBtn closeModal lng-submit" type="submit" name="submit">Saada</button>
                                 </div>
                             </div>
                             <button class="close-x" name="cancel">&#10006;</button>
-                        </form>
+                        </div>
                     </div>
                 </dialog>
             </div>
