@@ -29,24 +29,36 @@
   }
   .modal-game-test{
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 1;
     border: 0; 
     border-radius: 15px;    
-    min-width: 50%; 
-    max-width: 700px;
-    width: 50%; 
+    min-width: 60%; 
+    max-width: 800px;
+    width: 60%; 
     background-color: transparent;
     overflow: hidden;
-    max-height: 500px;
-    height: 500px;
-    left: 20px;
+    /* max-height: 1400px;
+    height: 1400px; */
     /* top: 110%; */
-    /* top: 0%; */
-    padding: .5em 1em;
+    top: -70%;
+    /* padding: .5em 1em; */
     cursor: pointer;
     visibility: hidden;
     transform: scale(0.1);
     transition: transform 200ms;
+}
+@media screen and (max-width: 1100px){
+  .modal-game-test{
+    width: 60%; 
+  }
+}
+@media screen and (max-width: 640px){
+  .modal-game-test{
+    width: 80%; 
+    top: 2%;
+  }
 }
 .modal-game-test.dialog-scale{
 	background-color: transparent;
@@ -62,13 +74,18 @@
     z-index: 10;
     background: #ffffff !important;
     width: 100%;
-    height: 490px;
-    max-height: 490px;
+    height: 600px;
+    max-height: 600px;
     border-radius: 15px; 
     margin: 0;
     /* padding: .5em 1em; */
     padding: .1em 1em;
     cursor: default;
+}
+@media screen and (max-width: 600px){
+  .modal-game-test-box{
+    padding: 2em 1em; 
+  }
 }
   .game-modal-header{
     text-align: center;
@@ -77,12 +94,14 @@
     font-style: italic;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 12%;
+    margin-bottom: 6%;
     color: var(--black-gold);
   }
 
   ul{
     list-style-type: none;
+    line-height: 2;
   }
   ul h6{
     display: inline;
@@ -97,7 +116,11 @@
     display:inline-block;
     width:25px;
     height:19px;
-    margin: 0 5px -4px 0; /*layout relationship between check and label*/
+    /* width:35px;
+    height:29px; */
+    /* margin: 0 5px -4px 0;  */
+    /*layout relationship between check and label*/
+    margin: 0 10px -1px 0;
   }
   .checkbox-square:checked{
     background: var(--dark);
@@ -107,17 +130,22 @@
     content: "";
     position: absolute;
     z-index: 1;
-    width: 1.1rem;
-    height: 1.1rem;
+    /* width: 1.1rem;
+    height: 1.1rem; */
+    width: 1.5rem;
+    height: 1.5rem;
     background: var(--dark);
     border: 1px solid var(--black-gold); 
     border-radius: 5px;
   }
   .checkbox-square:checked + label span:after {
     content: "\2713";
-    font-size: 12px;
+    font-size: 22px;
     font-weight: 800;
+    line-height: 1;
     padding-left: 0.1rem;
+    
+    /* padding-bottom: 1rem; */
     color: var(--black-gold);
   }
   .repeat{
@@ -127,6 +155,7 @@
     font-size: 22px;
     font-style: italic;
     padding-left: 2.5rem;
+    margin-bottom: 8%;
     cursor: pointer;
   }
   .modal-game-test-box > .modal-game-test > .repeat:hover{
@@ -137,7 +166,7 @@
   }
   .repeat:hover{
     color: #000000 !important;
-    filter: invert(50%);
+    filter: invert(10%);
   }
   .close-x{
     position: relative;
@@ -153,13 +182,14 @@
   .close-x:hover{
     color: #418A40 !important;
   }
-  .modal-game-test.modal-game-test-box:last-child:hover{
-    color: #418A40  !important;
+  h6:hover{
+    color: var(--green) !important;
   }
   .modal-game-test:hover{
     color: #418A40  !important;
   }
   .add{
+    text-align: center;
     position: relative;
     display: none;
     justify-content: center;

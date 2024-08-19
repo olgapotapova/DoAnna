@@ -1,6 +1,4 @@
-// const openModal = document.querySelector('.openModal');
 const showModal = document.querySelector('.showModal');
-
 const closeModal = document.querySelector('.closeModal');
 const closeX = document.querySelector('.close-x');
 const repeat = document.querySelector('.repeat');
@@ -55,38 +53,6 @@ class CorrectAnswerCounter extends Counter {
   }
 };
 
-// var el = document.querySelector('.control');
-// el.onclick = function() {
-//     window.onload();
-// };
-// closeModal.addEventListener('click', () => {
-//     modal.close();
-// });
-
-// const closeModal = event => {
-//   const target = event.target;
-
-//   if (
-//     target === modalElem ||
-//     (btnClose && target.closest(btnClose)) ||
-//     event.code === 'Escape'
-//     ) {
-
-//     modalElem.style.opacity = 0;
-
-//     setTimeout(() => {
-//       modalElem.style.visibility = 'hidden';
-//     }, time);
-
-//     window.removeEventListener('keydown', closeModal);
-//   }
-// }
-
-// const closeModal = event =>{
-//   const target = removeEventListener.target;
-// };
-
-
 play_file = function(){ 
       // audio.src = rand_audio;
       audio.load();
@@ -101,10 +67,7 @@ play_file = function(){
       src.connect(analyser);
       analyser.connect(context.destination);
       analyser.fftSize = 256;
-
-    //   var bufferLength = analyser.frequencyBinCount;
       var bufferLength = analyser.frequencyBinCount * 5;
-      // console.log(bufferLength); 
       var dataArray = new Uint8Array(bufferLength);  
       var WIDTH = canvas.width;
       var HEIGHT = canvas.height;
@@ -134,34 +97,34 @@ play_file = function(){
 };
 
 closeModal.addEventListener('click', () => {
-
   var roundCounterValue = Counter.getCounterFromCookie('roundCounter');
   var correctAnswerCounterValue = Counter.getCounterFromCookie('correctAnswerCounter');
- 
   roundCounterValue++;
   console.log("roundCounterValue:" + roundCounterValue );
-  // console.log("correctAnswerCounterValue:" + correctAnswerCounterValue);
   const roundCounter = new RoundCounter(roundCounterValue);
   roundCounter.saveToCookie('roundCounter');
 
   if(roundCounterValue >= 5){
-    if(correctAnswerCounterValue >= 4){
-      // console.log("green text");
-      // document.getElementById('add1').classList.add('visible')
-      add1.classList.add('visible');
-    }else if(correctAnswerCounterValue = 3){
-      // console.log("blue text");
-      // document.getElementById('add2').classList.add('visible')
-      add2.classList.add('visible');
-    }else if(correctAnswerCounterValue = 2){
-      // console.log("black text");
-      // document.getElementById('add3').classList.add('visible')
-      add3.classList.add('visible');
-    }else{
-      // console.log("rad text");
-      // document.getElementById('add4').classList.add('visible')
-      add4.classList.add('visible');
-    };
+    switch (correctAnswerCounterValue){
+      case 5:
+        add1.classList.add('visible');
+        break;
+      case 4: 
+        add1.classList.add('visible');
+        break; 
+      case 3:  
+        add2.classList.add('visible');
+        break; 
+      case 2: 
+        add3.classList.add('visible');
+        break;
+      case 1:
+        add4.classList.add('visible');
+        break;
+      case 0:
+        add4.classList.add('visible');
+        break;
+    } 
     roundCounterValue = 0;
     const roundCounter = new RoundCounter(roundCounterValue);
     roundCounter.saveToCookie('roundCounter');
@@ -201,14 +164,14 @@ showModal.addEventListener('click', () => {
     var audios = new Array('music/mono/1.mp3','music/mono/2.mp3','music/duet/11.mp3','music/duet/12.mp3','music/duet/13.mp3','music/trio/111.mp3','music/trio/112.mp3','music/trio/113.mp3');
     var rand_audio_index = Math.round(Math.random()*(audios.length-1));
     rand_audio = audios[rand_audio_index];
-    beginningOfThePlay(); ///////////////////////?
-////////////
-    console.log(check1.checked);
-    console.log(check2.checked);
-    console.log(check3.checked);
-    console.log("real:" + audio.src.includes('trio'));
-    console.log("real:" + audio.src.includes('duet'));
-    console.log("real:" + audio.src.includes('mono'));
+    beginningOfThePlay(); 
+
+    // console.log(check1.checked);
+    // console.log(check2.checked);
+    // console.log(check3.checked);
+    // console.log("real:" + audio.src.includes('trio'));
+    // console.log("real:" + audio.src.includes('duet'));
+    // console.log("real:" + audio.src.includes('mono'));
    
 
     setTimeout(() => {
@@ -218,15 +181,12 @@ showModal.addEventListener('click', () => {
     }, "1500");
 });  
 
-
-///1
 function beginningOfThePlay(){
   audio.src = rand_audio;
   console.log(audio.src);
 
   play_file();
 };
-
 
 repeat.addEventListener('click', () => {
   setTimeout(() => {
@@ -235,8 +195,6 @@ repeat.addEventListener('click', () => {
     play_file();
   }, "500"); 
 });
-
-
 
 var inputs = document.getElementsByName("choice");
 for (var i = 0; i < inputs.length; i++)

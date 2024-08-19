@@ -9,6 +9,11 @@ const langArr = {
         "en": "Singing studio",
         "ee": "Laulustuudio",
     },
+    "laulustuudio-header": {
+        "ru": "Вокальная студия",
+        "en": "Singing studio",
+        "ee": "Laulustuudio",
+    },
     "minust": {
         "ru": "Обо мне",
         "en": "About me",
@@ -224,15 +229,59 @@ const langArr = {
         "en": "Listen again",
         "ee": "Kuula uuesti",
     },
-    "": {
-        "ru": "",
-        "en": "",
-        "ee": "",
+    "tel": {
+        "ru": "Тел. +372 5561 40 84",
+        "en": "Tel. +372 5561 40 84",
+        "ee": "Tel. +372 5561 40 84",
+    },
+    "aadress": {
+        "ru": "Адрес:",
+        "en": "Address:",
+        "ee": "Aadress:",
+    },
+    "kontaktid": {
+        "ru": "Контакты",
+        "en": "Contacts",
+        "ee": "Kontaktid",
+    },
+    "instagram": {
+        "ru": "Инстаграм:",
+        "en": "Instagram:",
+        "ee": "Instagram:",
+    },
+    "facebook": {
+        "ru": "Фейсбук:",
+        "en": "Facebook:",
+        "ee": "Facebook:",
+    },
+    "telefon": {
+        "ru": "Телефон:",
+        "en": "Telephone:",
+        "ee": "Telefon:",
+    },
+    "super": {
+        "ru": "Поздравляем, у вас идеальный слух!",
+        "en": "Congratulations, you have a perfect ear!",
+        "ee": "Palju õnne, teil on täiuslik kõrv!",
+    },
+    "good": {
+        "ru": "Очень хорошо,но есть куда совершенствоваться!",
+        "en": "Very good, there is room for improvement!",
+        "ee": "Väga hea, on arenguruumi!",
+    },
+    "middle": {
+        "ru": "Неплохо, но можно лучше.",
+        "en": "Not bad, but it can be better.",
+        "ee": "Pole viga, aga saab paremini.",
+    },
+    "zero": {
+        "ru": "К сожалению, ни одного правильного ответа, но развить слух можно на уроках.",
+        "en": "Unfortunately, there is no right answer, but you can develop your hearing in lessons.",
+        "ee": "Kahjuks pole ühtegi õiget vastust, aga oma kuulmist võib arendada tundides.",
     },
     "": {
         "ru": "",
         "en": "",
         "ee": "",
-    },
-
+    }
 }
