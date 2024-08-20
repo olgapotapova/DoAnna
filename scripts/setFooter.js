@@ -6,7 +6,7 @@ var footerText = `
 <img class="icon" src="images/FacebookGold.svg" alt="Gold Facebook icon.">
 <img class="icon" src="images/ViberGold.svg" alt="Gold Viber icon.">
 </div>
-<h3 class="lng-tel telephone">Tel. +372 5561 40 84</h3>
+<a class="lng-tel telephone" href="tel:+372 5564 4084">+372 5564 4084</a>
 </div></div>`;
 
 

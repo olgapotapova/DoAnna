@@ -219,6 +219,11 @@ html, body {
     letter-spacing: 1.2px;
     text-align: center;
     padding-left: 15px;
+    text-decoration: none;
+  }
+
+  .telephone:hover{
+    color: var(--black-gold);
   }
   
 /*////// Main page footer end /////////*/
