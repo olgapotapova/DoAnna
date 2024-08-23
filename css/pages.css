@@ -140,7 +140,13 @@ h3{
     width: 50%;
 }
 
-.samuti p{
+.for-tel-link{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.samuti p, .for-tel-link p, .for-tel-link a{
     font-family: "Playfair Display", serif;
     font-size: 18px;
     font-style: italic;
@@ -148,6 +154,10 @@ h3{
     padding-top: 4%;
     position: relative;
     z-index: 1;
+}
+
+.for-tel-link a{
+    padding-top: 4.5%;
 }
 
 .musical-pattern{
