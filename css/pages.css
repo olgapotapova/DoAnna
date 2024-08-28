@@ -157,6 +157,10 @@ h3{
     z-index: 1;
 }
 
+.lng-raagime{
+    margin-top: -11px;
+}
+
 .for-tel-link a{
     padding-top: 4.5%;
 }
@@ -577,6 +581,7 @@ h3{
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
+        align-items: center;
         vertical-align: middle;
         max-width: 400px;
         width: 80%;
@@ -585,7 +590,7 @@ h3{
         font-style: italic;
         font-weight: 600;
         font-size: 32px;
-        line-height: 68px;
+        line-height: 30px;
         text-align: center;
         color: var(--black-gold);
         border: 0;

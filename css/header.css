@@ -167,9 +167,9 @@ header {
       background-color: #ffffff;
       transition: all 0.5s;
   }
-  .menu-btn:hover{
+  /* .menu-btn:hover{
     background-color: var(--black-gold);
-  }
+  } */
   .menu-btn span:nth-of-type(2) {
       top: calc(50% - 10px);
   }

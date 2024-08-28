@@ -85,9 +85,9 @@ const langArr = {
         "ee": "Helistage (tel: ",
     },
     "raagime": {
-        "ru": ") и поговорим.",
-        "en": ") and we'll talk.",
-        "ee": ") a me räägime.",
+        "ru": " и поговорим.",
+        "en": " and we'll talk.",
+        "ee": " ja me räägime.",
     },
     "talking": {
         "ru": "Ученики рассказывают...",
