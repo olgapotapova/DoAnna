@@ -10,7 +10,8 @@
 }
 
 .left-logo-img:hover{
-    filter: saturate(2);
+    /* filter: saturate(2); */
+    filter: invert(77%) sepia(51%) saturate(306%) hue-rotate(8deg) brightness(100%) contrast(87%);
 }
 
 .left-logo-href{
@@ -231,6 +232,10 @@ h3{
     padding-bottom: 8px;
 }
 
+.social-media-footer a:hover{
+    filter: invert(77%) sepia(51%) saturate(306%) hue-rotate(8deg) brightness(100%) contrast(87%);
+}
+
 .icon{
     width: 36px;
     height: auto;
@@ -266,6 +271,10 @@ h3{
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
+}
+
+.telephone:hover{
+    color: var(--black-gold);
 }
    
   /*////// End of pages footer /////////*/
