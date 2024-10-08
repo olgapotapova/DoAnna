@@ -483,6 +483,10 @@ h3{
         margin-left: auto;
         margin-right: auto;
     }
+    .contact-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .message-button-box{
         display: flex;
         justify-content: center;
@@ -496,20 +500,17 @@ h3{
     
     .lng-message{
         display: inline-flex;
-        margin-left: auto;
-        margin-right: auto;
         justify-content: center;
-        vertical-align: middle;
+        align-items: center;
+        line-height: 0.9;
         width: 400px;
         height: 80px;
         font-family: "Playfair Display", serif;
         font-style: italic;
         font-weight: 600;
         font-size: 32px;
-        line-height: 68px;
         text-align: center;
         color: var(--black-gold);
-        /* border: solid 1px var(--black-gold); */
         border-radius: 15px;
         background-color: var(--dark);
         box-shadow: 2px 0px 26px 7px rgba(125,110,58,0.31) inset;
@@ -534,6 +535,18 @@ h3{
         line-height: 25px;
         margin-bottom: 235px;
     }
+    .address dl { 
+        display: grid; 
+        grid-gap: 4px 16px; 
+        grid-template-columns: max-content; 
+      }
+    .address  dt { 
+        
+      }
+    .address dd { 
+        margin: 0; 
+        grid-column-start: 2; 
+      }
     .list-right{
         padding-left: 10px;
     }
@@ -551,7 +564,6 @@ h3{
         border: 0;     
         min-width: 50%; 
         max-width: 700px;
-        /* width: 700px; */
         width: 50%; 
         background-color: transparent;
         overflow: hidden;
@@ -576,7 +588,6 @@ h3{
       }
     .lng-submit,
     .lng-listen{
-        /* display: inline-flex; */
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -630,7 +641,6 @@ h3{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* width: 400px; */
         max-width: 400px;
         width: 80%;
         margin-left: auto;
@@ -645,9 +655,6 @@ h3{
         border: 0;
         height: 60px;
         min-height: 60px;
-        /* max-width: 400px;
-        width: 400px; */
-        /* max-width: 98%; */
         width: 98%;
         margin-left: auto;
         margin-right: auto;
