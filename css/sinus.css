@@ -197,25 +197,30 @@
     font-weight: bold;
     font-size: 32px;
   }
+  @media screen and (max-width: 600px){
+    .add{
+      font-size: 22px;
+    }
+  }
+  #add1{
+    color: var(--ok);
+  }
+  #add2{
+    color: var(--good);
+  }
+  #add3{
+    color: #000000;
+  }
   #add4{
     max-width: 60%;
+    color: var(--error);
   }
   .visible{
     display: flex;
   }
-  .green-text, .blue-text, .black-text, .red-text{
+  #add1, #add2, #add3, #add4{
     text-align: center;
   }
-  .green-text{
-    color: var(--ok);
-  }
-  .blue-text{
-    color: var(--good);
-  }
-  .black-text{
-    color: #000000;
-  }
-  .red-text{
-    color: var(--error);
-  }
+
+
 
